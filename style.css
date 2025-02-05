@@ -1,0 +1,83 @@
+/* Styling for the container */
+.container {
+    display: flex; /* Enables Flexbox */
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    gap:20px;
+    
+}
+
+/* Styling for each box */
+.box {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 18px;
+    font-weight:bold;
+    border-radius:1000px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    padding:20px;
+
+}
+
+.grid-item {
+    background-color: #28a745;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding:20px;
+    border-radius: 1000px;
+
+}
+
+.animated-button {
+    background-color: #ff5733;
+    color:white;
+    padding:12px,24px;
+    font-size: 18px;
+    border:none;
+    border-radius: 8px;
+    cursor:pointer;
+    transition:background-color 0.3s ease, transoform 0.2s;
+}
+.animated-button:hover {
+    background-color: #c70039;
+    transform:scale(1.2);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.bouncing-box {
+    width:150px;
+    height:50px;
+    background-color: #c70039;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:bold;
+    border-radius: 8px;
+    animation-delay: bounce 2s infinite;
+
+}
